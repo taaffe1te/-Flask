@@ -1,0 +1,31 @@
+<!DOCTYPE html>          <!--Объявляет тип документа как HTML5-->
+<html lang="en">         <!--Указывает, что язык документа — английский (en).-->
+
+
+<head>
+    <meta charset="UTF-8">  <!--Указывает кодировку символов для документа (UTF-8).-->
+    <title>dynamic</title>  <!--Устанавливает заголовок страницы как "dynamic".-->
+    <link href="{{url_for('static', filename = 'sem1.css')}}" rel="stylesheet" type="text/css"> <!--Подключает CSS-файл sem1.css из статической директории приложения Flask.-->
+</head>
+
+
+<body>
+<center>
+  <h2>{{prod_title}}</h2>
+    <table border = '1'>
+        <tr class="tab_title">    <!--Создает строку таблицы с классом tab_title-->
+            <td>Название</td>
+            <td>Ед. измерение</td>
+            <td>Цена</td>
+        </tr>
+        {% for product in products %}
+        <tr>
+            {%for p in product%}
+            <td>{{p}}</td>        <!--Создает ячейку таблицы для каждого элемента в product-->
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input category</title>
+    <link href="{{url_for('static', filename = 'sem1.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<center>
+  <h2>Ввод параметров</h2>
+  <p>
+    <form action="" method="post"> <!-- action - url кому передает управление, что подставить, method - метод запроса -->
+      <label for="prod_category">категория</label>
+      <input type="text" id="prod_category" name="prod_category">
+      <br><br>
+      <input type="submit" value="Отправить"> <!-- value - текст в кнопке -->
+    </form>
+  </p>
+</center>
+</body>
+</html>

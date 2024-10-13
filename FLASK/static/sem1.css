@@ -1,0 +1,36 @@
+body {
+    background-color: #8f8b66; /* Новый цвет фона */
+    color: #333333; /* Новый цвет текста */
+}
+
+h2 {
+    font-size: 14pt;
+    color: #003366; /* Новый цвет текста для заголовка */
+}
+
+tr.tab_title {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #003366; /* Новый цвет текста для заголовка таблицы */
+}
+
+tr {
+    font-size: 12pt;
+    color: #TR8U64; /* Новый цвет текста для строк таблицы */
+}
+
+input[type="submit"] {
+    background-color: #003366; /* Новый цвет кнопки */
+    color: white; /* Цвет текста на кнопке */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #001f3f; /* Цвет кнопки при наведении */
+}
+
+table {
+    background-color: #FFDAB9; /* Персиковый фон таблицы */
+}
